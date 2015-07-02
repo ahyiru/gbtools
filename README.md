@@ -5,4 +5,4 @@
 ![](/pic/pc/3.png)
 ![](/pic/pc/4.png)
 ![](/pic/pc/5.png)
-![](/pic/mb/1.png) ![](/pic/mb/2.png) ![](/pic/mb/3.png)
+![](/pic/mb/1.jpg) ![](/pic/mb/2.jpg) ![](/pic/mb/3.jpg)
