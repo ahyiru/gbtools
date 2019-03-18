@@ -1,0 +1,113 @@
+﻿<div class="mynav" ng-controller="myleft">
+	<div class="myhelp">
+		<div class="pull-right help-right">
+			<a class="mycheck" ng-click="chkResult()">查看结果 <i class=""></i></a>
+			<a href="javascript:alert('请联系管理员！');" class="">帮助 <i class=""></i></a>
+		</div>
+		<div class="help-title">
+			<span class="">当前得分及完成进度</span>
+		</div>
+	</div>
+	<ul class="mystep">
+		<li ng-controller="myp1" class="active">
+			<div class="pull-left">
+				<h5>{{app.steps.s1.id}} <span class="">{{app.steps.s1.title}}</span></h5>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps1v!=100}" max="max" value="ps1v" type="{{ps1t}}"></progressbar>
+		</li>
+		<li ng-controller="myp2">
+			<div class="pull-left">
+				<h5>{{app.steps.s2.id}} <span class="">{{app.steps.s2.title}}</span></h5>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps2v!=100}" max="max" value="ps2v" type="{{ps2t}}"></progressbar>
+		</li>
+		<li ng-controller="myp3">
+			<div class="pull-left">
+				<h5>{{app.steps.s3.id}} <span class="">{{app.steps.s3.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score3">
+				<span class="chart pull-right" easypiechart percent="score3" options="options3">
+					<span class="percent" ng-bind="score3"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps3v!=100}" max="max" value="ps3v" type="{{ps3t}}"></progressbar>
+		</li>
+		<li ng-controller="myp4">
+			<div class="pull-left">
+				<h5>{{app.steps.s4.id}} <span class="">{{app.steps.s4.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score4">
+				<span class="chart pull-right" easypiechart percent="score4" options="options4">
+					<span class="percent" ng-bind="score4"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps4v!=100}" max="max" value="ps4v" type="{{ps4t}}"></progressbar>
+		</li>
+		<li ng-controller="myp5">
+			<div class="pull-left">
+				<h5>{{app.steps.s5.id}} <span class="">{{app.steps.s5.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score5">
+				<span class="chart pull-right" easypiechart percent="score5" options="options5">
+					<span class="percent" ng-bind="score5"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps5v!=100}" max="max" value="ps5v" type="{{ps5t}}"></progressbar>
+		</li>
+		<li ng-controller="myp6">
+			<div class="pull-left">
+				<h5>{{app.steps.s6.id}} <span class="">{{app.steps.s6.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score6">
+				<span class="chart pull-right" easypiechart percent="score6" options="options6">
+					<span class="percent" ng-bind="score6"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps6v!=100}" max="max" value="ps6v" type="{{ps6t}}"></progressbar>
+		</li>
+		<li ng-controller="myp7">
+			<div class="pull-left">
+				<h5>{{app.steps.s7.id}} <span class="">{{app.steps.s7.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score7">
+				<span class="chart pull-right" easypiechart percent="score7" options="options7">
+					<span class="percent" ng-bind="score7"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps7v!=100}" max="max" value="ps7v" type="{{ps7t}}"></progressbar>
+		</li>
+		<li ng-controller="myp8" class="myrm">
+			<div class="pull-left">
+				<h5>{{app.steps.s8.id}} <span class="">{{app.steps.s8.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score8">
+				<span class="chart pull-right" easypiechart percent="score8" options="options8">
+					<span class="percent" ng-bind="score8"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps8v!=100}" max="max" value="ps8v" type="{{ps8t}}"></progressbar>
+		</li>
+		<li ng-controller="myp9" class="myrm">
+			<div class="pull-left">
+				<h5>{{app.steps.s9.id}} <span class="">{{app.steps.s9.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score9">
+				<span class="chart pull-right" easypiechart percent="score9" options="options9">
+					<span class="percent" ng-bind="score9"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps9v!=100}" max="max" value="ps9v" type="{{ps9t}}"></progressbar>
+		</li>
+		<li ng-controller="myp10">
+			<div class="pull-left">
+				<h5>{{app.steps.s10.id}} <span class="">{{app.steps.s10.title}}</span></h5>
+			</div>
+			<div class="myscore ng-hide" ng-show="score10">
+				<span class="chart pull-right" easypiechart percent="percent10" options="options10">
+					<span class="percent" ng-bind="score10"></span>
+				</span>
+			</div>
+			<progressbar class="progress-striped" ng-class="{'active':ps10v!=100}" max="max" value="ps10v" type="{{ps10t}}"></progressbar>
+		</li>
+	</ul>
+</div>

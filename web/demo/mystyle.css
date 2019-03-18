@@ -1,0 +1,43 @@
+﻿/*
+**	myui.css
+**	https://github.com/ahyiru/myui
+**	2015-05-25
+*/
+*,html{padding:0;margin:0;}
+body,h1,h2,h3,h4,h5,h6{ font-family: Arial,微软雅黑, Helvetica, sans-serif,黑体,宋体;}
+p{}
+span{}
+div,section,article{display: block;}
+ul{list-style:none;}
+tr,th,td{}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+.padding-10{padding:10px;}
+.padding-left-10{padding-left:10px;}
+.padding-right-10{padding-right:10px;}
+.padding-top-10{padding-top:10px;}
+.padding-bottom-10{padding-bottom:10px;}
+.margin-10{margin:10px;}
+.bg-blue{background:#1E90FF !important;}
+.bg-green{background:#00FF00 !important;}
+.bg-red{background:#FF4500 !important;}
+.bg-yellow{background:#FF8C00 !important;}
+.bg-gray{background:#778899 !important;}
+.t-blue{color:#1E90FF !important;}
+.t-green{color:#00FF00 !important;}
+.t-red{color:#FF4500 !important;}
+.t-yellow{color:#FF8C00 !important;}
+.t-gray{color:#778899 !important;}
+.fw600{font-weight:600 !important;}
+.fw700{font-weight:700 !important;}
+.fz11{font-size:11px !important;}
+.fz12{font-size:12px !important;}
+.fz13{font-size:13px !important;}
+.fz14{font-size:14px !important;}
+.fz15{font-size:15px !important;}
+.fz16{font-size:16px !important;}
+.fz17{font-size:17px !important;}
+.t-center{text-align:center;}
+.active{}

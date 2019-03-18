@@ -1,0 +1,43 @@
+﻿
+<!-- mystep -->
+<div class="mycontainer">
+	<!-- left -->
+	<div data-ng-include="'tpls/left.html'" class="myleft"></div>
+	<!-- /left -->
+	<!-- right -->
+	<div class="myright" ng-controller="myright">
+		<div class="mymain">
+			<div class="main-header">
+				<div class="myinfo row">
+					<div class="col-md6">
+						<div class="pull-right info-right">
+							<p>目前总分：<span class="info-text tc10" ng-bind="tscore">120</span></p>
+							<span class="">目前星级：</span>
+							<rating ng-model="rate" max="3" readonly="true" state-on="'fa fa-star fa-lg t-yellow'" state-off="'fa fa-star-o fa-lg t-gray'"></rating>
+						</div>
+					</div>
+					<div class="col-md6">
+						<div class="info-left">
+							<p>项目名称：<span class="info-text" ng-bind="name">test</span></p>
+							<p class="">建筑类型：<span class="info-text" ng-bind="type">type</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="mc-title">
+					<span class="badge">{{tid}}</span><span class="mctt">{{ttxt}}</span>
+				</div>
+				<div class="mc-info" data-ui-view></div>
+			</div>
+			<div class="main-footer">
+				<div class="pull-right">
+					<a class="btn btn-info" ng-click="prev()" ng-disabled="myprev">上一步 <i class=""></i></a>
+					<a class="btn btn-success" ng-click="next()" ng-bind="mynext">下一步 <i class=""></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /right -->
+</div>
+<!-- /mystep -->

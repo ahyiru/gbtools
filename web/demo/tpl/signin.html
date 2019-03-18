@@ -1,0 +1,47 @@
+<form class="signForm" name="form" ng-controller="signinCtrl">
+	<div class="signtitle">
+		<legend>登录</legend>
+	</div>
+
+	<fieldset>
+		<div class="text-danger text-center padding-bottom-10" ng-show="authError">
+			{{authError}}
+		</div>
+		<div class="form-group" ng-class="{'has-success':form.email.$valid,'has-error':!form.email.$valid && form.email.$dirty}" id="mymail">
+			<div class="input-icon">
+				<i class="fa fa-envelope-o"></i>
+				<input type="text" name="email" id="email" placeholder="邮箱" class="form-control" ng-model="email" ng-change="authError=null" autofocus>
+			</div>
+			<mail-tip></mail-tip>
+		</div>
+		
+		<div class="form-group" ng-class="{'has-success':form.password.$valid,'has-error':!form.password.$valid && form.password.$dirty}">
+			<div class="input-icon">
+				<i class="fa fa-lock"></i>
+				<input type="password" name="password" id="password" placeholder="密码" class="form-control" ng-model="password" ng-focus="authError=null;password=null" ng-minlength="6" required>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset class="margin-bottom-10 margin-12-5">
+		<div class="row">
+			<div class="col-md-6">
+				<button type="submit" class="btn btn-info btn-block" ng-click="login()" ng-disabled='form.$invalid'>登录</button>
+			</div>
+			<div class="col-md-6 rowheight">
+				<div class="text-right"><a ui-sref="page.fpwd">忘记密码？</a></div>
+			</div>
+		</div>
+	</fieldset>
+	<legend></legend>
+	<fieldset class="margin-12-5">
+		<p class="account">没有账号？</p>
+		<div class="row">
+			<div class="col-md-6">
+				<a ui-sref="page.signup" class="btn btn-warning btn-block">注册</a>
+			</div>
+			<div class="col-md-6">
+				<a ui-sref="app.info" class="btn btn-success btn-block">试用</a>
+			</div>
+		</div>
+	</fieldset>
+</form>

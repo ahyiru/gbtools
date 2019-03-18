@@ -1,0 +1,158 @@
+﻿
+<form class="form-horizontal" name="step1" id="step1" ng-controller="step1">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">项目名称</label>
+				<div class="col-md-6">
+					<input type="text" name="name" class="form-control" placeholder="test" ng-model="s1[0]">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">项目建设方</label>
+				<div class="col-md-6">
+					<input type="text" name="host" class="form-control" placeholder="test" ng-model="s1[1]">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">项目地址</label>
+				<div class="col-md-6">
+					<input type="text" name="addr" class="form-control" placeholder="test" ng-model="s1[2]">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑面积</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="b_area" class="form-control" placeholder="test" ng-model="s1[3]" required>
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">项目类型</label>
+				<div class="col-md-6">
+					<label class="radio-inline">
+						<input type="radio" value="1" ng-model="s1r" disabled> 居住建筑
+					</label>
+					<label class="radio-inline">
+						<input type="radio" value="2" ng-model="s1r" disabled> 公共建筑
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑容积率</label>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="test" ng-model="s1d" disabled>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑用地面积</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="bu_area" class="form-control" placeholder="test" ng-model="s1[4]">
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑面积（地上）</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="b_area_u" class="form-control" placeholder="test" ng-model="s1[5]">
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑面积（基地）</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="b_area_n" class="form-control" placeholder="test" ng-model="s1[6]">
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">建筑面积（地下）</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="b_area_d" class="form-control" placeholder="test" ng-model="s1[7]">
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">绿地率</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="p_green" class="form-control" placeholder="test" ng-model="s1[8]">
+						<span class="input-group-addon">%</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">公共绿地面积</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="green_area" class="form-control" placeholder="test" ng-model="s1[9]">
+						<span class="input-group-addon">m<sup>2</sup></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">居住使用人数</label>
+				<div class="col-md-6">
+					<div class="input-group">
+						<input type="text" name="users" class="form-control" placeholder="test" ng-model="s1[10]">
+						<span class="input-group-addon">人</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="col-md-4 control-label">图片上传</label>
+				<div class="col-md-6">
+					<input type="file" name="pic_up" class="" ng-model="s1.pic_up">
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

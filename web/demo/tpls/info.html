@@ -1,0 +1,77 @@
+﻿
+<!-- myinfo -->
+<div class="info">
+	<form class="form-horizontal" name="forminfo" id="info" ng-controller="myinfo">
+		<div class="row">
+			<div class="col-md-6 info-lt">
+				<div class="form-group">
+					<label class="col-md-4 control-label">项目名称<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<input type="text" name="name" class="form-control" placeholder="研发楼" ng-model="info.name" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">建设方<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<input type="text" name="builder" class="form-control" placeholder="搬砖工" ng-model="info.builder" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">建筑面积<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<div class="input-group">
+							<input type="text" name="b_area" class="form-control" placeholder="1000" ng-model="info.b_area" required>
+							<span class="input-group-addon">m<sup>2</sup></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-4 control-label">评价标准<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary" ng-model="info.standard" btn-radio="'1'">绿色建筑评价标准(GB-T50378-2014) <i class="fa fa-check t-yellow" ng-show="info.standard"></i></button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">建筑类型<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<div class="btn-group">
+						  <label class="btn btn-success" ng-model="info.btype" btn-radio="'1'">居住建筑 <i class="fa fa-check t-yellow" ng-show="info.btype==1"></i></label>
+						  <label class="btn btn-success" ng-model="info.btype" btn-radio="'2'">公共建筑 <i class="fa fa-check t-yellow" ng-show="info.btype==2"></i></label>
+					  </div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">评价类型<span class="t-red"> *</span></label>
+					<div class="col-md-6">
+						<div class="btn-group">
+						  <label class="btn btn-info" ng-model="info.ptype" btn-radio="'1'">设计 <i class="fa fa-check t-yellow" ng-show="info.ptype==1"></i></label>
+						  <label class="btn btn-info" ng-model="info.ptype" btn-radio="'2'">运营 <i class="fa fa-check t-yellow" ng-show="info.ptype==2"></i></label>
+					  </div>
+					</div>
+				</div>
+				<div class="form-group start">
+					<label class="col-md-4 control-label"></label>
+					<div class="col-md-6">
+						<a class="btn btn-info btn-block" ui-sref="app.step.step1" ng-disabled="forminfo.$invalid">开始测评<i class=""></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 info-rt">
+				<section>
+					<div class="htitle">历史记录</div>
+					<div class="hist">
+						<span>暂无记录</span>
+					</div>
+				</section>
+				<section>
+					<div class="htitle">历史记录</div>
+					<div class="hist">
+						<span>暂无记录</span>
+					</div>
+				</section>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- /myinfo -->

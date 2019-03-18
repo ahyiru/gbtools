@@ -1,0 +1,396 @@
+﻿
+<form class="form-horizontal" name="step9" id="step9" ng-controller="step9">
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w1_1==1&&4||0)+(w1_2==1&&4||0)+(w1_3==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[0].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[0].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w1_1">{{s9[0].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w1_1">{{s9[0].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[0].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w1_2">{{s9[0].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w1_2">{{s9[0].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[0].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w1_3">{{s9[0].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w1_3">{{s9[0].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w2_1==1&&6||0)+(w2_2==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[1].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[1].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w2_1">{{s9[1].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w2_1">{{s9[1].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[1].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w2_2">{{s9[1].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w2_2">{{s9[1].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w3_1==1&&3||0)+(w3_2==1&&1||0)+(w3_3==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[2].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[2].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w3_1">{{s9[2].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w3_1">{{s9[2].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[2].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w3_2">{{s9[2].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w3_2">{{s9[2].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[2].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w3_3">{{s9[2].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w3_3">{{s9[2].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w4_1==1&&2||0)+(w4_2==1&&2||0)+(w4_3==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[3].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[3].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w4_1">{{s9[3].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w4_1">{{s9[3].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[3].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w4_2">{{s9[3].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w4_2">{{s9[3].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[3].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w4_3">{{s9[3].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w4_3">{{s9[3].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w5_1==1&&7||0)+(w5_2==1&&3||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[4].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[4].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w5_1">{{s9[4].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w5_1">{{s9[4].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[4].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w5_2">{{s9[4].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w5_2">{{s9[4].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w6_1==1&&2||0)+(w6_2==1&&4||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[5].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[5].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w6_1">{{s9[5].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w6_1">{{s9[5].txt[0].rs[1]}}</label>
+				</div>
+			</div><div class="form-group">
+				<label>{{s9[5].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w6_2">{{s9[5].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w6_2">{{s9[5].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w7_1==1&&2||0)+(w7_2==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[6].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[6].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w7_1">{{s9[6].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w7_1">{{s9[6].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[6].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w7_2">{{s9[6].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w7_2">{{s9[6].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w8_1==1&&6||0)+(w8_2==1&&6||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[7].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[7].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w8_1">{{s9[7].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w8_1">{{s9[7].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[7].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w8_2">{{s9[7].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w8_2">{{s9[7].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w9_1==1&&5||0)+(w9_2==1&&2||0)+(w9_3==1&&3||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[8].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[8].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w9_1">{{s9[8].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w9_1">{{s9[8].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[8].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w9_2">{{s9[8].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w9_2">{{s9[8].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[8].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w9_3">{{s9[8].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w9_3">{{s9[8].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w10_1==1&&2||0)+(w10_2==1&&2||0)+(w10_3==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[9].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[9].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w10_1">{{s9[9].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w10_1">{{s9[9].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[9].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w10_2">{{s9[9].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w10_2">{{s9[9].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[9].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w10_3">{{s9[9].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w10_3">{{s9[9].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w11_1==1&&4||0)+(w11_2==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[10].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[10].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w11_1">{{s9[10].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w11_1">{{s9[10].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[10].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w11_2">{{s9[10].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w11_2">{{s9[10].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w12_1==1&&2||0)+(w12_2==1&&2||0)+(w12_3==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[11].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[11].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w12_1">{{s9[11].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w12_1">{{s9[11].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[11].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w12_2">{{s9[11].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w12_2">{{s9[11].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[11].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w12_3">{{s9[11].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w12_3">{{s9[11].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="r_title">
+			<div class="pull-right">
+				<span class="rtsv"></span><span class="r_score">{{(w13_1==1&&4||0)+(w13_2==1&&2||0)+(w13_3==1&&2||0)+(w13_4==1&&2||0)}}</span>
+			</div>
+			<div class="rtl">
+				<span class="">{{s9[12].title}}</span> <i class="fa fa-book t-yellow"></i> <i class="fa fa-plus-square t-gray"></i>
+			</div>
+		</div>
+		<div class="myradio">
+			<div class="form-group">
+				<label>{{s9[12].txt[0].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w13_1">{{s9[12].txt[0].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w13_1">{{s9[12].txt[0].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[12].txt[1].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w13_2">{{s9[12].txt[1].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w13_2">{{s9[12].txt[1].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[12].txt[2].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w13_3">{{s9[12].txt[2].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w13_3">{{s9[12].txt[2].rs[1]}}</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{s9[12].txt[3].rt}}</label>
+				<div class="radio-list">
+					<label class="radio-inline"><input type="radio" value="1" ng-model="w13_4">{{s9[12].txt[3].rs[0]}}</label>
+					<label class="radio-inline"><input type="radio" value="2" ng-model="w13_4">{{s9[12].txt[3].rs[1]}}</label>
+				</div>
+			</div>
+		</div>
+	</section>
+</form>

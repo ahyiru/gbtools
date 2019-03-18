@@ -1,0 +1,348 @@
+﻿
+<!-- myframe -->
+<div class="myframe" id="myframe" ng-controller="myframe">
+	<style media=print>  
+		.noprint{display:none;}  
+	</style> 
+	<form class="form-horizontal" name="forminfo">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading lph"><i class="fa fa-user"></i> 评估得分表</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<div class="panel panel-default mypanel">
+							<div class="margin-bottom-10">
+								<span>标准：</span>
+								<span>GB-T50378-2014</span>
+							</div>
+							<div class="margin-bottom-10">
+								<span>测评人：</span>
+								<span>游客</span>
+							</div>
+							<div class="margin-bottom-10">
+								<span>测评时间：</span>
+								<span>{{ctime}}</span>
+							</div>
+							<div class="mystar bgc1">
+								<p class="score-txt tc10" ng-bind="tscore">120</p>
+								<rating ng-model="rate" max="3" readonly="true" state-on="'fa fa-star fa-2x t-yellow'" state-off="'fa fa-star-o fa-2x t-gray'"></rating>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="panel panel-default">
+						<div class="panel-heading bgc9">绿色建筑性能总得分</div>
+							<table class="table table-bordered table-striped table-hover">
+								<thead>
+									<tr>
+										<th colspan=2>板块</th>
+										<th>得分率</th>
+										<th>权重值</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="score in scores">
+										<td>{{score.id}}</td>
+										<td>{{score.name}}</td>
+										<td>{{score.rate}}%</td>
+										<td>{{score.wv}}</td>
+									</tr>
+									<tr>
+										<td>{{lastid}}</td>
+										<td>提高与创新</td>
+										<td>{{lastrate}}%</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td colspan=2>总得分</td>
+										<td>{{tscore}}%</td>
+										<td>{{twv}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div id="mychart" style="width: 98%; height: 310px; margin: 0 auto"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc1">1-节地与室外环境</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc1">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p4">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc1">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c4">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc1">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t3}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc2">2-节能与能源利用</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc2">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p5">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc2">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c5">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc2">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t4}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc3">3-节水与水资源利用</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc3">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p6">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc3">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c6">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc3">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t5}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc4">4-节材与材料资源利用</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc4">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p7">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc4">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c7">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc4">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t6}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc5">5-室内环境质量</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc5">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p8">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc5">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c8">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc5">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t7}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3" ng-show="myshow">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc6">6-施工管理</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc6">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p9">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc6">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c9">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc6">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t8}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3" ng-show="myshow">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc7">7-运营管理</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc7">
+								<th colspan=4>P-控制项</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="p in p10">
+								<td>{{p.sid}}</td>
+								<td>{{p.stxt}}</td>
+								<td colspan=2>{{p.m}}</td>
+							</tr>
+							<tr class="bgc7">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+							<tr ng-repeat="c in c10">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc7">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t9}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading bgc8">{{lastid}}-提高与创新</div>
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr class="bgc8">
+								<th colspan=2>C-得分项</th>
+								<th>总分</th>
+								<th>得分</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="c in c11">
+								<td>{{c.id}}</td>
+								<td>{{c.txt}}</td>
+								<td>{{c.score}}</td>
+								<td>{{c.score1}}</td>
+							</tr>
+							<tr class="bgc8">
+								<td colspan=2>本版块得分情况</td>
+								<td colspan=2>{{ds.t10}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	</form>
+	<div class="myprint noprint">
+		<a class="btn btn-info" ui-sref="app.info">重新测评 <i class=""></i></a>
+		<a class="btn btn-success" id="myprint">打印结果 <i class=""></i></a>
+	</div>
+</div>
+<!-- /myframe -->

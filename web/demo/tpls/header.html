@@ -1,0 +1,45 @@
+﻿<div class="container" ng-controller="myhead">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="javascript:;">绿色建筑星级评估系统</a>
+	</div>
+	<div class="navbar-collapse collapse" id="navbar">
+		<ul class="nav navbar-nav navbar-right">
+		<li id="user"><a ui-sref="page.login">User</a></li>
+		<li id="help"><a href="javascript:alert('请联系管理员!')">帮助</a></li>
+		<li id="about">
+			<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">关于我们</a>
+			<div class="dropdown-menu">
+					<div class="thumbnail">
+						<img src="wx.jpg" alt="wx">
+					</div>
+					<div class="caption wxtxt">
+						<h4>扫码即可关注！</h4>
+						<h4>微信号：yiru_js</h4>
+					</div>
+			</div>
+		</li>
+		<li id="suggest"><a href="javascript:alert('请联系 Email：ah.yiru@gmail.com.')">意见反馈</a></li>
+		<li id="logout"><a ui-sref="page.login">退出</a></li>
+		<li class="dropdown">
+			<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">设置 <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li class="dropdown-header">皮肤选择</li>
+				<li class="myskin1"><a href="javascript:;">skin1</a></li>
+				<li class="myskin2"><a href="javascript:;">skin2</a></li>
+				<li class="myskin3"><a href="javascript:;">skin3</a></li>
+				<li class="divider"></li>
+				<li class="dropdown-header">其他设置</li>
+				<li><a href="javascript:;">设置1</a></li>
+				<li><a href="javascript:;">设置2</a></li>
+			</ul>
+		</li>
+		<li id="fs"><a href="javascript:;" ng-click="fs()" title="{{fst}}"><i class="fa fa-arrows-alt"></i></a></li>
+		</ul>
+	</div>
+</div>

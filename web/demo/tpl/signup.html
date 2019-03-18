@@ -1,0 +1,84 @@
+<form class="signForm" name="form" ng-submit="" ng-controller="signupCtrl">
+	<div class="signtitle">
+		<legend>注册</legend>
+	</div>
+	<fieldset>
+		<!-- name -->
+		<div class="form-group" ng-class="{'has-success has-feedback':form.name.$valid,'has-error':!form.name.$valid && form.name.$dirty}">
+			<div class="input-icon">
+				<i class="fa fa-user"></i><i class="fa fa-chech-square-o right"></i>
+				<input type="text" name="name" id="name" placeholder="昵称" class="form-control" ng-model="name" ng-minlength="3" chk-name autofocus required>
+				<span ng-class="{'glyphicon glyphicon-ok form-control-feedback':form.name.$valid}"></span>
+			</div>
+		</div>
+		<div class="error" ng-messages="form.name.$error">
+			<div ng-message="minlength">
+				用户名至少3个字符！
+			</div>
+			<div ng-message="cname">
+				此用户名已注册！
+			</div>
+			<div ng-message="server">
+				网络错误！
+			</div>
+		</div>
+		<!-- email -->
+		<div class="form-group" ng-class="{'has-success has-feedback':form.email.$valid,'has-error':!form.email.$valid && form.email.$dirty}">
+			<div class="input-icon">
+				<i class="fa fa-envelope-o"></i>
+				<input type="email" name="email" id="email" placeholder="邮箱" class="form-control" ng-model="email" chk-email required>
+				<span ng-class="{'glyphicon glyphicon-ok form-control-feedback':form.email.$valid}"></span>
+			</div>
+		</div>
+		<div class="error" ng-messages="form.email.$error">
+			<div ng-message="cemail">
+				此邮箱已注册，请登录！
+			</div>
+			<div ng-message="server">
+				网络错误！
+			</div>
+		</div>
+		<!-- password -->
+		<div class="form-group" ng-class="{'has-success has-feedback':form.password.$valid,'has-error':!form.password.$valid && form.password.$dirty}">
+			<div class="input-icon">
+				<i class="fa fa-lock"></i>
+				<input type="password" name="password" id="password" placeholder="密码" class="form-control" ng-model="password" ng-minlength="6" required>
+				<span ng-class="{'glyphicon glyphicon-ok form-control-feedback':form.password.$valid}"></span>
+			</div>
+		</div>
+		<div class="error" ng-messages="form.password.$error">
+			<div ng-message="minlength">
+				密码强度太弱！
+			</div>
+		</div>
+		<!-- repassword -->
+		<div class="form-group" ng-class="{'has-success has-feedback':form.repassword.$valid && password===repassword,'has-error':form.repassword.$dirty && !form.repassword.$valid || !(password===repassword)}">
+			<div class="input-icon">
+				<i class="fa fa-check"></i>
+				<input type="password" name="repassword" id="repassword" placeholder="重复密码" class="form-control" ng-model="repassword" chk-repsd ng-minlength="6" required>
+				<span ng-class="{'glyphicon glyphicon-ok form-control-feedback':form.repassword.$valid && password===repassword}"></span>
+			</div>
+		</div>
+		<div class="error" ng-messages="form.repassword.$error">
+			<div ng-message="crepsd">
+				两次输入的密码不一致！
+			</div>
+		</div>
+	</fieldset>
+	<fieldset class="margin-bottom-10">
+		<div class="row">
+			<div class="col-md-12">
+				<button type="submit" class="btn btn-info btn-block" ng-click="signup()" ng-disabled='form.$invalid'>注册</button>
+			</div>
+		</div>
+	</fieldset>
+	<legend></legend>
+	<fieldset>
+		<p class="account">已有账号？</p>
+		<div class="row">
+			<div class="col-md-12">
+				<a ui-sref="page.login" class="btn btn-success btn-block">登录</a>
+			</div>
+		</div>
+	</fieldset>
+</form>

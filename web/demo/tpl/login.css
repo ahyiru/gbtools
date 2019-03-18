@@ -1,0 +1,173 @@
+/*  20150313
+**  angular test
+**  ah.yiru@gmail.com
+*/
+
+body {
+
+}
+
+.signForm {
+  background: #eee;
+  padding: 10px 30px 50px;
+  border-radius: 10px;
+}
+.signpage {
+  margin-top: 6%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.signtitle {
+  text-align: center;
+  margin: 20px 0;
+}
+.signtitle>h3 {
+  color: #ffffff;
+}
+.rowheight {
+  height: 34px;
+  line-height: 34px;
+}
+.line {
+  border-bottom: 1px dotted #ccc;
+}
+.margin-12-5>div>div {
+  margin: 5px 0;
+}
+.padding-bottom-10 {
+  padding-bottom: 10px !important;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+.account {
+  font-size: 18px;
+  color: #555;
+}
+.error {
+  color: #a94442;
+  margin: 0 0 5px 20px;
+}
+.input-icon {
+  position: relative;
+}
+.input-icon input {
+  padding-left: 41px !important;
+}
+.input-icon i {
+  color: #A2A2A2;/* #A2A2A2; */
+  display: block;
+  position: absolute;  /* margin: 6px 4px 4px 6px; */
+  top: 6px;
+  left: 9px;
+  width: 24px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
+  text-align: center;
+  padding-right: 8px;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.input-icon.right input {
+  padding-left: 12px !important;
+  padding-right: 33px !important;
+}
+.input-icon.right i {
+  right: 8px;
+  float: right;
+}
+
+/* bs中.form-group默认是15px; */
+.signForm .form-group {
+  margin-bottom: 10px;
+}
+
+/* mailtip 20150506 */
+.signForm ul li {
+  list-style: none;
+  padding: 3px 2px 3px 20px;
+  color: #000000;
+}
+.signForm ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #eee;
+  opacity: .9;
+  position: absolute;
+  z-index: 1000;
+}
+
+/* li:hover{
+   background:#aaa;
+   cursor:pointer;
+} */
+.mysel {
+  background: #aaa;
+}
+
+/* 404 */
+
+.my404{
+margin-bottom:30px;
+text-align:center;
+}
+.my404txt{
+font-size:170px;
+text-shadow:0 1px 0 #dee5e7,0 2px 0 #fcfdfd,0 5px 10px rgba(0,0,0, 0.125),0 10px 20px rgba(0,0,0,0.2);
+color:#fff;
+}
+
+.mylist{
+margin-bottom:30px;
+color:#dcf2f8;
+background-color:#23b7e5;
+}
+.list-group{
+border-radius:2px;
+}
+.mylist .list-group-item{
+padding-right:15px;
+background-color:transparent;
+border-color:#19a9d5 !important;
+}
+.mylist a{
+color:#ffffff;
+}
+.mylist .text-muted {
+  color: #b0e1f1 !important;
+}
+.list-group-item>.fa-chevron-right{
+float:right;
+margin-top:4px;
+margin-right:-5px;
+}
+.mylist .fa-fw{
+margin-right:5px;
+}
+
+.mylist .list-group-item:hover,
+.mylist .list-group-item:focus,
+.mylist .list-group-item:active{
+background-color:#16aad8 !important;
+}
+.mylist a:hover{
+color:#ffffff;
+}
+
+
+@media(max-width:991px){
+  .mypage.container{
+    padding-right:1%;
+    padding-left:1%;
+  }
+  .signpage .col-md-4{
+    padding-left:0;
+    padding-right:0;
+  }
+}

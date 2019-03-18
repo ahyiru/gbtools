@@ -1,0 +1,162 @@
+﻿
+<form class="form-horizontal" name="step2" id="step2" ng-controller="step2">
+	<div class="alert alert-warning">
+		<p class="myalert">如果您的项目要取得国家绿色建筑星级认证，必须满足以下控制项。请核对各项后确定，您的项目可否满足所有控制项！</p>
+	</div>
+	<div class="p2all">
+		<div class="checkbox">
+			<label id="chkall">
+				<input type="checkbox" ng-model="chkall" ng-change="myca()"> <span>全部满足</span>
+			</label>
+		</div>
+	</div>
+	<div id="chk">
+		<section>
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s3.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[0].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s4.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[1].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s5.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[2].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s6.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[3].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s7.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[4].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="myrm">
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s8.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[5].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="myrm">
+			<div class="row">
+				<div class="row">
+					<label class="col-md-2 control-label">{{app.steps.s9.title}}</label>
+				</div>
+			</div>
+			<div class="row" ng-repeat="list in lists[6].slists">
+				<div class="row">
+					<div class="col-md-3 p2sel">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" ng-model="list.chk"> {{list.sid}}
+							</label> <i class="fa fa-book"></i>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<p class="p2p">{{list.text}}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</form>
